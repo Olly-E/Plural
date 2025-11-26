@@ -144,7 +144,7 @@ const NewAppointmentModal = ({
                 className="text-primary!"
               ></Button>
             </div>
-            <DashboardSearchInput />
+            <DashboardSearchInput handleSearch={() => {}} />
             <button
               type="button"
               onClick={handleViewClinicType}
