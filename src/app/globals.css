@@ -4,23 +4,37 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.PhoneInputInput {
+  @apply bg-transparent;
+  display: flex;
+  align-items: center;
+  outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+@theme {
+  --color-primary: #0B0C7D;
+  --color-black: #051438;
+  --color-primary-light: #D7E3FC;
+  --color-secondary: #EDF0F8;
+  --color-tertiary: #677597;
+  --color-yellow-state: #D6AB00;
+  --color-red-state: #FF2C2C;
+  --color-purple-state: #A22CFF;
+  --color-purple-2: #6658F4;
+  --color-purple-light: #D0D1FB;
+  --color-orange-state: #FF9D33;
+  --color-gray-1: #A6AFC2;
+  --color-gray-2: #DFE2E9;
+  --color-gray-3: #E6E8EB;
+  --breakpoint-xs: 440px;
+  --breakpoint-2xs: 375px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.centered {
+  @apply flex items-center justify-center;
+}
+
+.button-hover {
+  @apply duration-200 transition-colors hover:bg-primary/10
 }
